@@ -1,0 +1,22 @@
+%form#login_form
+  %table
+    %thead
+      %tr
+        %th#login_header
+          #login_failure.alert.alert-danger.hidden Invalid
+          %h3 Login
+    %tbody
+      %tr
+        %td
+          %input#username{name: 'username', type: 'text',
+          'placeholder' => 'user name', 'autocapitalize' => 'off',
+          'autocorrect' => 'off'}
+      %tr
+        %td
+          %input#password{name: 'password', type: 'password',
+          'placeholder' => 'password', 'autocapitalize' => 'off',
+          'autocorrect' => 'off'}
+      %tr
+        %td
+          %button#login.btn.btn-primary.btn-sm.pull-right{type: 'submit'} Login
+

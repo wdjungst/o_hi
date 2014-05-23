@@ -1,0 +1,15 @@
+!!!
+%html
+  %head
+    %title Our House
+    <link href='/css/o_hi.css' rel='stylesheet' type='text/css'>
+    <link href='/css/bootstrap.css' rel='stylesheet' type='text/css'>
+    <link href='//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css' rel='stylesheet' type='text/css'>
+  %body
+    - if @logged_in
+      = haml :dashboard
+    - else
+      = haml :login
+  %script{type: 'text/javascript', src: '/javascripts/jquery.js', 'data-toggle' => 'tab'}
+  %script{type: 'text/javascript', src: '/javascripts/o_hi.js', 'data-toggle' => 'tab'}
+  %script{type: 'text/javascript', src: '/javascripts/bootstrap.min.js', 'data-toggle' => 'tab'}
