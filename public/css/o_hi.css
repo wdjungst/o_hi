@@ -1,0 +1,22 @@
+#login_form {
+  max-width: 200px;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 15%; }
+
+.work-container {
+  margin-top: 3%;
+  max-width: 90%;
+  min-width: 1200px;
+  margin-left: 1%; }
+
+.task-header {
+  margin-left: 20%; }
+
+.task-wrapper {
+  height: 500px;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  border-style: solid;
+  border-width: 1px;
+  border-color: lightgray; }
