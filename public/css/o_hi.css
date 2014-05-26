@@ -23,6 +23,9 @@
   min-width: 1200px;
   margin-left: 1%; }
 
+#add_task_modal {
+  max-width: 500px; }
+
 .task-header {
   margin-left: 40%; }
 
@@ -57,3 +60,6 @@
 .task-title th {
   padding-bottom: 5px;
   padding-left: 2px; }
+
+.sm-font {
+  font-size: 8px; }
