@@ -2,15 +2,21 @@
   %table.task-main
     %thead.task-title
       %tr.header-row
-        %th#task_header title
-        %th#points 10
+        %th#task_header
+          = locals[:title]
+        %th#points
+          = locals[:points]
         %th
           #menu.glyphicon.glyphicon-tasks
     %tbody
       %tr.task-description
-        %td#task-description do something
+        %td#task-description
+          = locals[:description]
       %tr
-        %td.checkbox
+        %td
+        %td
+        %td
           %label
-            %input{type: 'checkbox'} Complete?
+            %button#task_action.btn.btn-primary.btn-xs
+              = locals[:action]
 

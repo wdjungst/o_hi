@@ -3,7 +3,7 @@
     .col-xs-2
       %label.task-header todo
       #todo_container.task-wrapper
-        = haml :task
+        = haml(:task, :locals => {title: 'test', points: 10, description: 'something', action: 'take'})
     .col-xs-2
       %label.task-header doing
       #doing_container.task-wrapper
