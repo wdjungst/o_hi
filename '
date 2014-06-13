@@ -1,0 +1,15 @@
+!!!
+%html
+  %head
+    = haml :head
+  %body
+    = haml :nav
+    %ul.list-group
+      %li{class: 'list-group-item list-group-item-success', 'href' => '#'}
+        Stuff
+        %span{class: 'glyphicon glyphicon-plus'}
+      %li{class: 'list-group-item list-group-item-info'} might use for a category of tasks
+      %li{class: 'list-group-item list-group-item-warning'} another category
+      %li{class: 'list-group-item list-group-item-danger'} urgent tasks
+
+

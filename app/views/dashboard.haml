@@ -1,18 +1,27 @@
-.work-container.container-fluid
-  %button#add_task.btn.btn-primary.btn-xs Add Task
-  .row
-    .col-xs-2
-      %label.task-header todo
-      #todo_container.task-wrapper
-        = haml(:task, :locals => {title: 'test', points: 10, description: 'something', action: 'take'})
-    .col-xs-2
-      %label.task-header doing
-      #doing_container.task-wrapper
-    .col-xs-2
-      %label.task-header complete
-      #complete_container.task-wrapper
-    .col-xs-2
-      %label.task-header done
-      #done_container.task-wrapper
-
-= haml :add_task
+-#- partial 'nav'
+-#%head
+  %title o Hi
+  <link href='/css/o_hi.css' rel='stylesheet' type='text/css'>
+  <link href='/css/bootstrap.css' rel='stylesheet' type='text/css'>
+  <link href='//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css' rel='stylesheet' type='text/css'>
+%table#chore-board-table
+  %tbody#chore-board-body
+    %tr#chore-board-row
+      %th
+        %ul.list-group
+          %li.list-group-item.list-group-item-success.chores
+            %a{'href' => '#'}
+              Stuff
+              %span.glyphicon.glyphicon-plus
+          %li.list-group-item.list-group-item-info{'href' => '#'}
+            %a{'href'=>'#'}
+              Some other stuff
+              %span.glyphicon.glyphicon-plus
+          %li.list-group-item.list-group-item-warning{'href' => '#'}
+            %a{'href'=>'#'}
+              another category
+              %span.glyphicon.glyphicon-plus
+          %li.list-group-item.list-group-item-danger
+            %a{'href'=>'#'}
+              urgent tasks
+              %span.glyphicon.glyphicon-plus{'href' => '#'}

@@ -1,12 +1,14 @@
 !!!
 %html
   %head
-    %title Our House
-    <link href='/css/o_hi.css' rel='stylesheet' type='text/css'>
-    <link href='/css/bootstrap.css' rel='stylesheet' type='text/css'>
-    <link href='//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css' rel='stylesheet' type='text/css'>
+    %title o Hi
+    %link{'href' => '/css/o_hi.css', 'rel' => 'stylesheet', 'type' => 'text/css'}
+    %link{'href' => '/css/bootstrap.css', 'rel' => 'stylesheet', 'type' => 'text/css'}
+    %link{'href' => '//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css', 'rel' => 'stylesheet', 'type' => 'text/css'}
   %body
     - if @logged_in
+      - partial 'nav', template_engine: :haml
+      = haml :nav
       = haml :dashboard
     - else
       = haml :login
